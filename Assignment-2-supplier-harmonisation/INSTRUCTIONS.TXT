@@ -1,0 +1,36 @@
+PREREQUISITES
+Install required libraries:
+pip install requests pandas
+
+HOW TO RUN
+
+Step 1: Run the main pipeline
+python main.py
+
+This will:
+- Fetch 200+ products from European Sourcing API
+- Standardise and harmonise the data
+- Save output to output/ folder
+
+Step 2: Run data exploration (If you want to see EDA)
+python explorer.py
+
+Step 3: Run query functions (According to assignment)
+python query.py
+
+OUTPUT FILES
+output/raw_products.json      - Raw data from API
+output/unified_catalogue.json - Clean unified dataset
+output/unified_catalogue.csv  - Same data in CSV format
+
+FILE STRUCTURE
+config.py      - API credentials
+extractor.py   - Fetches data from API
+transformer.py - Cleans and standardises data
+models.py      - Unified product schema
+explorer.py    - Data exploration analysis
+query.py       - Query by category, stock, supplier
+main.py        - Runs the full pipeline
+
+NOTE
+Sandbox API returns data from XD CONNECTS supplier only.

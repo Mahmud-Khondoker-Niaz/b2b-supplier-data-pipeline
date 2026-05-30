@@ -1,0 +1,34 @@
+
+1. PREREQUISITES
+Install required libraries:
+
+pip install pandas numpy sqlalchemy psycopg2-binary matplotlib seaborn requests
+
+2. HOW TO RUN
+
+Option A: Using VS Code (Recommended)
+1. Open the project folder in VS Code.
+2. Open 'analysis.ipynb' and ensure the 'Jupyter' extension is installed.
+3. Select your Python 3.x Kernel at the top right and click "Run All".
+4. After completion, open 'report.ipynb' to view the finalized business findings.
+
+Option B: Using Jupyter Notebook/Lab
+1. Open your terminal/command prompt in the project folder.
+2. Type 'jupyter notebook' and press Enter.
+3. Open 'analysis.ipynb' from the browser interface and run all cells.
+
+Option C: Using PyCharm Professional
+1. Open the folder as a new Project.
+2. Open the .ipynb files, PyCharm will automatically provide the notebook interface.
+
+3. FILE STRUCTURE & ROLES
+
+config.py       - Secure database credentials (Host, Port, User, Pass).
+database.py     - PostgreSQL connection handler script.
+analysis.ipynb  - Data processing, outlier detection, and 6 key visualizations.
+final_dataset.json - The output queryable dataset (generated after running).
+
+4. IMPORTANT NOTES
+
+IP Whitelisting: Please ensure the machine's IP address is added to the database allow-list.
+
